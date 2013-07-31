@@ -1,0 +1,83 @@
+@import partials/base
+@import blueprint/reset
+@import blueprint
+@import blueprint/grid
+@import blueprint/typography
+@import compass/utilities/general/float
+
+@include blueprint
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body.bp
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  background: url('/images/bg.png') repeat scroll transparent
+  a
+    +hover-link
+  ol
+    list-style-type: none
+    padding: 0
+  h1, h2, h3, h4
+    font-family: $header-font-family
+  form.formtastic
+    input[type="text"], input[type="email"], input[type="search"], input[type="password"]
+      border: solid 1px #CCC
+      line-height: 2em
+      font: bold 12px/24px $blueprint-font-family
+      vertical-align: middle
+      color: #909090
+      height: 2em
+      background-color: white
+      padding: 0.3em 0.5em
+      +rounded-corners(3px)
+  #header
+    h1
+      margin: 10px 0
+      font-weight: bold
+      vertical-align: bottom
+      #nav
+        +float-right
+        a
+          font-size: 14px
+          font-family: $blueprint-font-family
+  #content
+    +layout-box
+    h2
+      +border-bottom
+    .bottom-links
+      a
+        +float-left
+        padding-right: 20px
+  #footer
+    +light-shadow
+    color: #8C8C8C
+    font-size: 12px
+    margin-top: 10px
+
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+form.bp
+  +blueprint-form
+  
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col
+  #container
+    +container
+  #header, #footer
+    +column($blueprint-grid-columns)
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3)
+    +column($sidebar-columns)
+  #content
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3)
+    // true means it's the last column in the row
+    +column($content-columns, true)
+

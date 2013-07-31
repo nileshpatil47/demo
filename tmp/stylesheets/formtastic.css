@@ -1,0 +1,42 @@
+/*
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?
+
+Backtrace:
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/tree/root_node.rb:23:in `render'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin.rb:81:in `update_stylesheets'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin.rb:54:in `check_for_updates'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.1.1/lib/sass/plugin/rack.rb:51:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/home/nilesh/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/home/nilesh/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/nilesh/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/nilesh/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "NoMethodError: You have a nil object when you didn't expect it!\A You might have expected an instance of Array.\A The error occurred while evaluating nil.empty?"; }

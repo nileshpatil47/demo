@@ -1,0 +1,52 @@
+// variables
+$google-font  : "Reenie Beanie"
+@import url("http://fonts.googleapis.com/css?family=#{$google-font}")
+$header-font-family       : $google-font, arial, serif
+
+$main-color: #c00
+$background-color: #ededed
+$grayborder: 1px solid #bebdbd
+
+$blueprint-grid-columns   : 24
+$blueprint-container-size : 940px
+$blueprint-grid-margin    : 10px
+
+$blueprint-font-family    : "Helvetica Neue", Helvetica, Arial, sans-serif
+$blueprint-font-size      : 14px
+
+$font-color               : #828282
+$link-color               : $main-color
+$link-hover-color         : $main-color
+$link-focus-color         : $main-color
+$link-active-color        : $main-color
+$link-visited-color       : $main-color
+$header-color             : $main-color
+$box-padding              : 20px
+
+// Use this to calculate the width based on the total width.
+// Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
+$blueprint-grid-width     : ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+
+// mixings
+@mixin rounded-corners($radius)
+  border-radius: $radius
+  
+@mixin hover-link
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+@mixin layout-box
+  +rounded-corners(5px)
+  padding: $box-padding
+  background-color: $background-color
+  width: 900px
+  border: $grayborder
+  box-shadow: #bebdbd 1px 1px 3px
+  
+@mixin border-bottom
+  border-bottom: $grayborder
+  box-shadow: #f3f3f3 0px 1px 0px
+  
+@mixin light-shadow
+  text-shadow: #f6f6f6 0px 1px 1px
