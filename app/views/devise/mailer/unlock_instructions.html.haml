@@ -1,4 +1,0 @@
-%p= t('devise.mailer.unlock.welcome', :default => "Hello #{email}!", :email => @resource.email)
-%p= t('devise.mailer.unlock.you_have_been_locked_out', :default => "Your account has been locked due to an excessive amount of unsuccessful sign in attempts.")
-%p= t('devise.mailer.unlock.click_to_unlock', :default => "Click the link below to unlock your account:")
-%p= link_to t('devise.mailer.unlock.link', :default => 'Unlock my account'), unlock_url(@resource, :unlock_token => @resource.unlock_token)

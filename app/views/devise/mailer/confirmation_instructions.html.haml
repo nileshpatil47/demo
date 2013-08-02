@@ -1,3 +1,0 @@
-%p= t('devise.mailer.confirmation_instruction.welcome', :default => "Welcome #{email}!", :email => @resource.email)
-%p= t('devise.mailer.confirmation_instruction.link_below', :default => "You can confirm your account through the link below:")
-%p= link_to t('devise.mailer.confirmation_instruction.link', :default => 'Confirm my account'), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)

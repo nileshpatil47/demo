@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Btr::Application.config.secret_token = 'c89fb7d81b6bb2f03ad037ad646de13aadfe47eeb3a68954aa38f4c0e9735f1dc9b1b99640c06795716e3391a5dfa7559220d06098a0d8b3f275abde0fb7eea5'
+Rails3MongoidDevise::Application.config.secret_token = '2e16658ee1ca9825515d39fe72725ee4588555485984f7b668c423b16bf5ee9788ee134c715638238f49ae0638c942652e6b624544771d817e81f7810848fd12'
