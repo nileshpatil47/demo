@@ -5,7 +5,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
-gem "activeadmin", "~> 0.6.0"
+gem "activeadmin", :git => "https://github.com/gregbell/active_admin.git"
 gem "activeadmin-mongoid", git: "git://github.com/elia/activeadmin-mongoid.git"
 gem 'jquery-rails'
 gem "mongoid", ">= 3.1.2"
